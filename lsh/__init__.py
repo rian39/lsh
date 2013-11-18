@@ -164,7 +164,7 @@ class LSHCache:
 
     def insert_batch(self, doc_tuples):
         """Batch method for adding db docs to cache"""
-        print '[add_docs]\tentering with len(docs)=%d' % (len(docs))
+        print '[add_docs]\tentering with len(docs)=%d' % (len(docs_tuples))
         for i, doc_tuple in enumerate(doc_tupless):
             if (i % 100 == 0):
                 print '\r[add_docs]\tprocessed %d / %d docs:' % (i,len(docs)),
